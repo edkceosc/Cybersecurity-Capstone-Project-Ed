@@ -1,1 +1,2 @@
-# Cybersecurity-Capstone-Project-Ed
+# Cybersecurity Capstone Project by Ed
+Copyright and credits accordingly
