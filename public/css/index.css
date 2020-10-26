@@ -1,0 +1,192 @@
+#header, #main-links {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+@media(max-width: 480px) {
+    #header, #main-links  {
+        flex-direction: column;
+    }
+    #header {
+        padding: 1em;
+    }
+    #header h1 {
+        text-align: center;
+    }
+}
+
+#header {
+    margin-bottom: 1em;
+}
+
+#header i {
+    font-size: 2em;
+}
+
+.footer {
+    margin-top: 3em;
+    padding: 3rem 1.5rem 3rem;
+}
+
+.button-icon {
+    margin-right: 0.75em;
+}
+
+#main-links {
+    padding: 2em 0;
+}
+
+#main-links p a {
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: block;
+}
+
+#main-links p a:hover {
+    background-color: #e9d985;
+}
+
+.large-font {
+    font-size: 1.5em;
+}
+
+.is-centered {
+    text-align: center;
+}
+
+.margin-bottom {
+    margin-bottom: 1em;
+}
+
+/* Forms */
+
+form {
+    max-width: 800px;
+    margin: auto;
+}
+
+form h2 {
+    margin-bottom: 0.75rem;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "icon input"
+        ". error"
+        "button button";
+
+    width: 75%;
+    margin-bottom: 15px;
+}
+
+.form-container .icon {
+    grid-area: icon;
+    min-width: 50px;
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    text-align: center;
+}
+
+.form-container input {
+    grid-area: input;
+    padding: 10px;
+    outline: none;
+}
+
+.form-container input:focus {
+    border: 2px solid dodgerblue;
+}
+
+.form-container .error {
+    grid-area: error;
+    padding: 10px;
+    color: red;
+}
+
+.form-container .error:empty {
+    display: none;
+}
+
+.form-container button {
+    grid-area: button;
+    font-size: 0.9em;
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.form-container #registration-error {
+    grid-area: button;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-container #registration-error:empty {
+    display: none;
+}
+
+.form-container #pass-reset {
+    grid-area: button;
+    text-align: center;
+}
+
+.form-container button:hover {
+    opacity: 1;
+}
+
+.container.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Database dump */
+
+#dbdump-table {
+    margin: 0 auto;
+    width: 25%;
+    min-width: 250px;
+}
+
+#dbdump-table td, #dbdump-table th {
+    border: 1px solid #b0b0b0;
+    text-align: center;
+    padding: 8px;
+}
+
+#dbdump-table tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.message.is-dark.message-is-read .message-header {
+    background-color: #777;
+}

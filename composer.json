@@ -1,0 +1,23 @@
+{
+    "name": "dpet23/coursera_messaging_system",
+    "description": "Coursera Capstone Project Messaging System",
+    "license": "proprietary",
+    "require": {
+        "php": "^7.3.11",
+        "ext-pdo": "*",
+        "ext-openssl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "lib\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1"
+    }
+}
