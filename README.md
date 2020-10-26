@@ -1,2 +1,2 @@
-# Cybersecurity Capstone Project by Ed
-Copyright and credits accordingly
+# Cybersecurity Capstone Project by Edgardo Santamaria
+God is away on business.
